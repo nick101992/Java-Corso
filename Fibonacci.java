@@ -1,12 +1,19 @@
 import java.util.*;
 
-public class Test {
+public class Fibonacci {
     public static void main (String[] args){
     	
     	System.out.print("Immetti numero della serie Fibonacci:");
     	Scanner input = new Scanner(System.in);
     	int n = input.nextInt();
     	input.close();
+    	fibonacci(n);
+    
+    }
+    
+    
+    public static void fibonacci(int n){
+
     	int x = 0;
     	int y = 1;
  
@@ -38,5 +45,7 @@ public class Test {
 	        		System.out.print(y);
 	        }
         }
-    }
-}
+    } 
+}  
+
+
