@@ -3,21 +3,20 @@ import java.util.*;
 public class Test {
     public static void main (String[] args){
     	
-    	
     	System.out.print("Immetti numero della serie Fibonacci:");
     	Scanner input = new Scanner(System.in);
     	int n = input.nextInt();
     	input.close();
-    	
+    	int x = 0;
+    	int y = 1;
+ 
     	if(n <= 0){
     		System.out.print("Immetti un numero maggiore o uguale ad 1");
     	}
-    	int x = 0;
-    	
+    	   	
     	if(n == 1){
     		System.out.print(x);
     	}
-        int y = 1;
         
         if(n >= 2){
         	System.out.print(x+",");
