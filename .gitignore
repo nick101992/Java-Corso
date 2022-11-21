@@ -1,11 +1,28 @@
 /Test.class
-.mylyn/.taskListIndex/
-*.log
-.plugins/org.eclipse.m2e.core/nexus/
+*target*
+*.jar
+*.war
+*.ear
+*.class
+
+# eclipse specific git ignore
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
 *.swp
-.mylyn/*
-.plugins/org.eclipse.core.resources/.root/*.tree
-.markers
-.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs
-.plugins/org.eclipse.ui.workbench/workingsets.xml
-.plugins/org.eclipse.team.cvs.core
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch

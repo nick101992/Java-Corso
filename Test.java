@@ -1,3 +1,4 @@
+
 public class Test {
     public static void main (String[] args){
         int x = 0;
@@ -12,7 +13,6 @@ public class Test {
         		System.out.print(y+",");
         	}
         	else
-        		System.out.print(y);
         		System.out.print(y);
         }
     }
