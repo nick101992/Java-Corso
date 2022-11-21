@@ -13,6 +13,7 @@ public class Test {
         	}
         	else
         		System.out.print(y);
+        		System.out.print(y);
         }
     }
 }
