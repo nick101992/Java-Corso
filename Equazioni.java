@@ -18,7 +18,7 @@ public class Equazioni {
     	
     	equazioneSecondoGrado(a, b, c);
     }
-    
+   
     public static void equazioneSecondoGrado(double a, double b, double c){
     	double delta = (Math.pow(b, 2) - (4*a*c));
     	if (delta > 0) {
