@@ -1,5 +1,3 @@
-import java.util.Scanner;
-import java.util.Arrays;
 public class MatriceQuadrata{
     public static void main (String[] args){
     	stampaMatrice(6,"F");
