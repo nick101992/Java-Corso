@@ -5,8 +5,7 @@ public class Decrescente {
     	stampaNumDecrescenti(); 
     }
     
-    public static void stampaNumDecrescenti(){
-    	
+    public static void stampaNumDecrescenti(){    	
     	System.out.println("Immetti un numero di 5 cifre:");
     	Scanner input = new Scanner(System.in);
     	int n = input.nextInt();
@@ -19,10 +18,7 @@ public class Decrescente {
             }    		
     	}else {
     		System.out.println("Il numero non e' valido");
-    	}
-    	
-    	boolean flag = true;
-        if(n<=9999 || n>100000) {
+            boolean flag = true;
             while(flag) {
                 System.out.println("Immetti un numero di 5 cifre:");
                 Scanner input2 = new Scanner(System.in);
@@ -40,5 +36,5 @@ public class Decrescente {
                 }
             }
     	}
-   }
+    }
 }
