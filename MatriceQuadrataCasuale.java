@@ -1,3 +1,8 @@
+/*Riempire una matrice quadrata di una dimensione random di interi casuali
+ da dare in input ad una seconda funzione che calcola la media degli elementi
+ della matrice e crea una matrice con solo i numeri maggiori di tale media
+ (anche questa deve essere quadrata, riempire con 0 le caselle in più*/
+
 import java.util.Random;
 public class MatriceQuadrataCasuale{
     public static void main (String[] args){    	
@@ -9,7 +14,7 @@ public class MatriceQuadrataCasuale{
     	int[][] arr = new int[dim_matrice][dim_matrice];
     	Random ran = new Random();
         for (int i = 0; i < dim_matrice; i++){
-            for (int j = 0; (arr[i] != null && j < arr[i].length); j++){
+            for (int j = 0; j < arr[i].length; j++){
             	arr[i][j]=ran.nextInt(10); // Ritorna numeri tra 0-9
             	System.out.print(arr[i][j] + " ");
             }
@@ -25,7 +30,7 @@ public class MatriceQuadrataCasuale{
     	double somma = 0;
     	
         for (int i = 0; i < dim_matrice; i++){
-            for (int j = 0; (matrice[i] != null && j < matrice[i].length); j++){
+            for (int j = 0;  j < matrice[i].length; j++){
             	somma = somma + matrice[i][j];
             }
         }
@@ -41,7 +46,7 @@ public class MatriceQuadrataCasuale{
         System.out.println();
         System.out.println("Matrice con solo numeri compresi tra la media e 9:");
         for (int i = 0; i < dim_matrice; i++){
-            for (int j = 0; (matrice[i] != null && j < matrice[i].length); j++){
+            for (int j = 0; j < matrice[i].length; j++){
             	if (matrice[i][j] <= arrontonda_media ) {
             		matrice[i][j]=0;
             		System.out.print(matrice[i][j] + " ");
