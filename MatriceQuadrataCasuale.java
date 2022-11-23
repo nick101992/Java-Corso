@@ -6,7 +6,7 @@
 import java.util.Random;
 public class MatriceQuadrataCasuale{
     public static void main (String[] args){    	
-    	mediaMatrice(stampaMatrice(4));
+    	mediaMatrice(stampaMatrice(6));
     }
     
     public static int[][] stampaMatrice(int dim_matrice){
@@ -36,7 +36,7 @@ public class MatriceQuadrataCasuale{
         }
         double media = somma/num_elementi;
         long arrontonda_media = Math.round(media);
-        Random ran = new Random();
+        //Random ran = new Random();
         //Costruisco matrice con solo i numeri maggiori della media
         System.out.println();
         System.out.println("Somma numeri:" +somma);
@@ -52,7 +52,10 @@ public class MatriceQuadrataCasuale{
             		System.out.print(matrice[i][j] + " ");
             	}
             	else {
-            		matrice[i][j]= ran.nextInt((int)arrontonda_media,10);// Ritorna numeri fra la media e 9
+            		/*Se non voglio gli stessi numeri maggiori della media
+            		*della matrice precendente tolgo il commento alla riga 39 e 
+            		*alla riga 58 che ritorna numeri random tra la media e 9*/
+            		//matrice[i][j]= ran.nextInt((int)arrontonda_media,10);
             		System.out.print(matrice[i][j] + " ");
             	}
             }
