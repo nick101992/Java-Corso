@@ -1,3 +1,7 @@
+/*Riempiere una tabella di 4 righe e 3 colonne con interi pseudo-casuali
+  compresi tra 1 e 9 (estremi inclusi). Per ciascuna riga della tabella
+  visualizzare la somma degli interi su ciascuna colonna*/
+
 import java.util.Random;
 public class MatriceSommaRigCol{
     public static void main (String[] args){    	
@@ -20,11 +24,10 @@ public class MatriceSommaRigCol{
             		System.out.print(sommaRiga);
             		sommaRiga=0;
             	}
-            }          
-            System.out.println();
-            
+            }
+            System.out.println();            
         }
-        
+        System.out.println("__  __  __");
         for (int j = 0; j < arr[0].length; j++){
             for (int i = 0; i < arr.length; i++){
             	sommaColonna=sommaColonna+arr[i][j];

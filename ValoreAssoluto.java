@@ -1,0 +1,2 @@
+/*Scrivere una funzione che prende in input un numero
+e stampi il valore assoluto di tale numero.*/

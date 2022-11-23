@@ -1,3 +1,9 @@
+/*Scrivere un algoritmo che preso in input un numero
+X a 5 cifre, visualizza in ordine decrescente i
+numeri naturali da X a 150 a step di 2. Stampare
+“ERRORE” in caso il numero inserito non rispetta i
+requisiti e ripetere l’inserimento*/
+
 import java.util.Scanner;
 
 public class Decrescente {

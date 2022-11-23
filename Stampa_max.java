@@ -1,3 +1,6 @@
+/*Scrivere una funzione che prende due numeri come
+parametro e manda in print il più grande tra i due*/
+
 import java.util.Scanner;
 public class Stampa_max {
     public static void main (String[] args){	

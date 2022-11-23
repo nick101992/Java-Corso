@@ -1,3 +1,5 @@
+/*Esercizio per risolvere equazioni di secondo grado
+ del tipo ax^2+bx+c=0*/
 import java.util.*;
 public class Equazioni {
     public static void main (String[] args){

@@ -1,3 +1,4 @@
+/*Metodo per rimuovere un elemento dall'array*/
 import java.util.Arrays;
 public class ArrayEliminaElemento{
     public static void main (String[] args){

@@ -1,3 +1,10 @@
+/*Scrivere un programma che stampi sullo schermo il
+vostro nome all’interno di un rettangolo come
+nell’esempio:
++ - - - - - +
+|   Nome    |
++ - - - - - +*/
+
 import java.util.Scanner;
 public class Stampa_nome {
     public static void main (String[] args){

@@ -1,6 +1,18 @@
+/*Scrivere una Matrice Quadrata che prende in input una dimensione
+ random e un carattere casuale che sia visualizzato nelle diagonali della matrice
+ ESEMPIO:
+ F 0 0 0 0 0 F 
+ 0 F 0 0 0 F 0 
+ 0 0 F 0 F 0 0 
+ 0 0 0 F 0 0 0 
+ 0 0 F 0 F 0 0 
+ 0 F 0 0 0 F 0 
+ F 0 0 0 0 0 F 
+*/
+
 public class MatriceQuadrata{
     public static void main (String[] args){
-    	stampaMatrice(6,"F");
+    	stampaMatrice(7,"F");
     }
     
     public static void stampaMatrice(int dim_matrice, String carattere){

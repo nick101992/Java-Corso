@@ -1,3 +1,6 @@
+/*Scrivere una funzione che somma tra loro tutti i numeri che 
+prende in input da tastiera (0 per chiudere il programma)*/
+
 import java.util.Scanner;
 public class Sommatrice {
     public static void main (String[] args){	

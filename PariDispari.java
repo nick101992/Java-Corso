@@ -1,0 +1,1 @@
+/*Preso in input un numero, stampare se è pari o dispari*/

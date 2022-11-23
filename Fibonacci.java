@@ -1,3 +1,4 @@
+/*Esercizio per risolvere la serie di Fibonacci*/
 import java.util.*;
 
 public class Fibonacci {
