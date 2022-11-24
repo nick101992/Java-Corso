@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class TestInterruttore {
     public static void main(String[] args) {
     	
-    	Lampadina lamp1 =  new Lampadina(4);
+    	Lampadina lamp1 =  new Lampadina(2);
     	Interruttore inter1 = new Interruttore(1,lamp1);
     	Interruttore inter2 = new Interruttore(2,lamp1);
     	Scanner input = new Scanner(System.in);
@@ -21,6 +21,12 @@ public class TestInterruttore {
 	    	
 	    	case "1":
 	    		inter1.click();
+	    		if (lamp1.getNumClick() > lamp1.getClicksMassimi()){
+	    			System.out.println("La Lampadina si e' rotta!");
+	    			System.out.println("Programma chiuso");
+		    		input.close();
+		    		break; 
+		    	}
 	    		System.out.println("Interruttore 1 premuto!");
 	    		lamp1.stato();
 	    		break;
@@ -38,18 +44,12 @@ public class TestInterruttore {
 	    		
 	    	default:
 	    		System.out.println("Comando errato");
-	    		break;
-	    		
+	    		break;	
 	    	}
-    		
-    		
-	    	if (lamp1.getNumClick() > lamp1.getClicksMassimi()){
-    			System.out.println("Lampadina Rotta");
-    			System.out.println("Programma chiuso");
-	    		input.close();
-	    		break; 
-	    	}  
-    		
+	    	
+		    if (lamp1.getNumClick() > lamp1.getClicksMassimi()){
+		    	break; 
+		    }
     	}
     }
 }

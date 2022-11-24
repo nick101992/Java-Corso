@@ -15,9 +15,10 @@ public class Interruttore{
     // Metodi
    
     public void click(){
-    	lampadina.contaClick();
+    	
         if(lampadina.getStatoLampadina().equals("Spenta") && lampadina.getNumClick() <= lampadina.getClicksMassimi()) {
         	lampadina.setStatoLampadina("Accesa");
+        	lampadina.contaClick();
         }
         else if (lampadina.getStatoLampadina().equals("Accesa") && lampadina.getNumClick() <= lampadina.getClicksMassimi()) {
         	lampadina.setStatoLampadina("Spenta");
