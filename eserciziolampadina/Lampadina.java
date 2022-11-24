@@ -20,22 +20,25 @@ public class Lampadina{
     	return this.statoLampadina;
     }
     
-    public void click(){
-    	this.numClick++;
-        if(this.statoLampadina.equals("Spenta") && this.numClick <= this.clicksMassimi) {
-        	this.statoLampadina = "Accesa";
-        }
-        else if (this.statoLampadina.equals("Accesa") && this.numClick <= this.clicksMassimi) {
-        	this.statoLampadina = "Spenta";
-		}
-        else {
-        	this.statoLampadina = "Rotta";
-        }        
+    public void contaClick(){
+    	this.numClick++;     
     }
 
     // Getters
 
+    public String getStatoLampadina(){
+        return this.statoLampadina;
+    }
+    public int getClicksMassimi(){
+        return this.clicksMassimi;
+    }
     public int getNumClick(){
         return this.numClick;
     }
+    
+    // Setters
+    public void setStatoLampadina(String statoLampadina){
+        this.statoLampadina = statoLampadina;
+    }
+    
 }
